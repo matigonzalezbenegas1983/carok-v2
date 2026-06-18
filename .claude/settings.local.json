@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /b \"C:\\\\Users\\\\matia\\\\OneDrive\\\\Desktop\\\\PROYECTANDO..! abril 2026\\\\CLAUDE\")",
+      "mcp__8fc896de-0acf-4bf2-8040-8b7399354c8a__generate_typescript_types"
+    ]
+  }
+}
