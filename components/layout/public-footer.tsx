@@ -1,11 +1,13 @@
 import Image from "next/image"
 import Link from "next/link"
-import { MessageCircle } from "lucide-react"
+import { MessageCircle, Instagram, Facebook } from "lucide-react"
 import { WHATSAPP_DEFAULT } from "@/lib/constants"
 import { buildWhatsAppUrl } from "@/lib/utils"
 
 export function PublicFooter() {
   const waUrl = buildWhatsAppUrl(WHATSAPP_DEFAULT, "Hola! Necesito información sobre CarOK.")
+  const igUrl = process.env.NEXT_PUBLIC_INSTAGRAM
+  const fbUrl = process.env.NEXT_PUBLIC_FACEBOOK
 
   return (
     <footer className="bg-void border-t border-white/8">
@@ -14,7 +16,7 @@ export function PublicFooter() {
           {/* Brand */}
           <div className="col-span-1 lg:col-span-2">
             <Image
-              src="/logo.png"
+              src="/logo.svg"
               alt="CarOK"
               width={120}
               height={40}
@@ -33,20 +35,28 @@ export function PublicFooter() {
               >
                 <MessageCircle className="h-4 w-4" />
               </a>
-              <a
-                href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 text-surface/60 hover:border-brand hover:text-brand transition-colors"
-                aria-label="Instagram"
-              >
-                <span>Instagram</span>
-              </a>
-              <a
-                href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 text-surface/60 hover:border-brand hover:text-brand transition-colors"
-                aria-label="Facebook"
-              >
-               <span>Facebook</span>
-              </a>
+              {igUrl && (
+                <a
+                  href={igUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 text-surface/60 hover:border-brand hover:text-brand transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-4 w-4" />
+                </a>
+              )}
+              {fbUrl && (
+                <a
+                  href={fbUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 text-surface/60 hover:border-brand hover:text-brand transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-4 w-4" />
+                </a>
+              )}
             </div>
           </div>
 

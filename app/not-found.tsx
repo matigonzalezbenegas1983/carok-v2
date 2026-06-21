@@ -11,7 +11,7 @@ export default function NotFound() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-void p-8 text-center">
       <Image
-        src="/logo.png"
+        src="/logo.svg"
         alt="CarOK"
         width={160}
         height={64}

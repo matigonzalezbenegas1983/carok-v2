@@ -36,7 +36,7 @@ export function AdminSidebar() {
       <div className="flex items-center px-5 py-5 border-b border-white/8">
         <Link href="/">
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="CarOK"
             width={100}
             height={36}

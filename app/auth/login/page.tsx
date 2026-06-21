@@ -16,7 +16,7 @@ export default function LoginPage() {
         <div className="mb-8 flex justify-center">
           <Link href="/">
             <Image
-              src="/logo.png"
+              src="/logo.svg"
               alt="CarOK"
               width={140}
               height={56}

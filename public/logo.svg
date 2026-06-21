@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" role="img" aria-label="CarOK">
-  <rect width="100%" height="100%" fill="#000" />
-  <text x="20" y="55" font-family="Inter, Arial, sans-serif" font-size="48" fill="#fff" font-weight="700">CarOK</text>
+  <text x="0" y="58" font-family="Inter, system-ui, -apple-system, Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="-2">
+    <tspan fill="#FFFFFF">Car</tspan><tspan fill="#1F6D53">OK</tspan>
+  </text>
 </svg>
